@@ -77,6 +77,9 @@ def runSomeTests():
     data = getObjectTest(client2, "bucket1", "object1")
     putObjectTest(client2, "bucket3", "object3", data)
 
+# sudo /data/bin/minio server --address :9001 /data/server1/data{1..16} &
+# sudo /data/bin/minio server --address :9002 /data/server2/data{1..16} &
+
 if __name__ == "__main__":
     
         runSomeTests()
